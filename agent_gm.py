@@ -7,9 +7,9 @@ from serpapi import GoogleSearch
 
 st.set_page_config(page_title="AI Research Agent 🔎", page_icon="🤖", layout="wide")
 
-GEMINI_API_KEY = "AIzaSyANNBeHq1JU1yi8WqfG-vEsAIf5d5gwtog"
+GEMINI_API_KEY = GEMINI_API_KEY
 
-SERPAPI_API_KEY = "fdda04d9784afacb5e86c008a245123217124483822ab1ef68fd03c0b3ba86bb"
+SERPAPI_API_KEY = SERPAPI_API_KEY
 
 CSS = """
 [data-testid="stMetric"] {
@@ -140,3 +140,4 @@ if start_btn:
         st.warning("Please enter both a company name and a job role.")
 else:
     st.info("Fill out the details in the sidebar and click **Start Research**.")
+
